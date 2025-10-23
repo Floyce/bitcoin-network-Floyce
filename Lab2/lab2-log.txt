@@ -1,0 +1,2 @@
+Lab 2 – Bitcoin Network Setup and Node Synchronization
+In this lab, we configured Bitcoin nodes, connected peers, and observed initial block synchronization.
