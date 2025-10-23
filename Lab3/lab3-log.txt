@@ -1,0 +1,6 @@
+RECV_ADDR=$(bitcoin-cli -regtest getnewaddress)
+bitcoin-cli -regtest sendtoaddress $RECV_ADDR 5.0
+bitcoin-cli -regtest getmempoolinfo
+bitcoin-cli -regtest getrawmempool | jq '.'
+bitcoin-cli -regtest generatetoaddress 1 $ADDRESS
+bitcoin-cli -regtest gettransaction $TXID
