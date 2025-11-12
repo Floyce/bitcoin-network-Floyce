@@ -1,0 +1,24 @@
+Lab 4 — Compact Block Relay (BIP152)
+
+Objective:
+To observe reduced bandwidth during block propagation using Compact Block Relay (BIP152).
+
+Step 1: Enable Compact Blocks
+Compact blocks are automatically supported in Bitcoin Core (v0.13.0 and above).
+
+To view negotiation:
+Command:
+    tail -f ~/.bitcoin/regtest/debug.log | grep compact
+Expected Output:
+    You’ll see lines such as:
+    sendcmpct version=2
+    recv cmpctblock
+    send cmpctblock
+
+Step 2: Mine a Block and Observe
+Command:
+    bitcoin-cli -regtest generatetoaddress 1 $ADDRESS
+
+Observation:
+    When a new block is mined, compact block messages are exchanged between peers.
+    This reduces the data required to announce and relay new blocks across the network.
