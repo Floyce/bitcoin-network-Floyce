@@ -1,0 +1,272 @@
+{
+  "chain": "regtest",
+  "blocks": 306,
+  "headers": 306,
+  "bestblockhash": "5da1587defd98e986ab75e91c7744f4d46c241cf240dbaebd37741bf902f346c",
+  "difficulty": 4.656542373906925e-10,
+  "time": 1762953909,
+  "mediantime": 1762953908,
+  "verificationprogress": 1,
+  "initialblockdownload": false,
+  "chainwork": "0000000000000000000000000000000000000000000000000000000000000266",
+  "size_on_disk": 91644,
+  "pruned": false,
+  "warnings": [
+    "This is a pre-release test build - use at your own risk - do not use for mining or merchant applications"
+  ]
+}
+{
+  "version": 289900,
+  "subversion": "/Satoshi:28.99.0/",
+  "protocolversion": 70016,
+  "localservices": "0000000000000c09",
+  "localservicesnames": [
+    "NETWORK",
+    "WITNESS",
+    "NETWORK_LIMITED",
+    "P2P_V2"
+  ],
+  "localrelay": true,
+  "timeoffset": 0,
+  "networkactive": true,
+  "connections": 1,
+  "connections_in": 1,
+  "connections_out": 0,
+  "networks": [
+    {
+      "name": "ipv4",
+      "limited": false,
+      "reachable": true,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    },
+    {
+      "name": "ipv6",
+      "limited": false,
+      "reachable": true,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    },
+    {
+      "name": "onion",
+      "limited": true,
+      "reachable": false,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    },
+    {
+      "name": "i2p",
+      "limited": true,
+      "reachable": false,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    },
+    {
+      "name": "cjdns",
+      "limited": true,
+      "reachable": false,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    }
+  ],
+  "relayfee": 0.00001000,
+  "incrementalfee": 0.00001000,
+  "localaddresses": [
+  ],
+  "warnings": [
+    "This is a pre-release test build - use at your own risk - do not use for mining or merchant applications"
+  ]
+}
+{
+  "version": 289900,
+  "subversion": "/Satoshi:28.99.0/",
+  "protocolversion": 70016,
+  "localservices": "0000000000000c09",
+  "localservicesnames": [
+    "NETWORK",
+    "WITNESS",
+    "NETWORK_LIMITED",
+    "P2P_V2"
+  ],
+  "localrelay": true,
+  "timeoffset": 0,
+  "networkactive": true,
+  "connections": 1,
+  "connections_in": 1,
+  "connections_out": 0,
+  "networks": [
+    {
+      "name": "ipv4",
+      "limited": false,
+      "reachable": true,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    },
+    {
+      "name": "ipv6",
+      "limited": false,
+      "reachable": true,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    },
+    {
+      "name": "onion",
+      "limited": true,
+      "reachable": false,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    },
+    {
+      "name": "i2p",
+      "limited": true,
+      "reachable": false,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    },
+    {
+      "name": "cjdns",
+      "limited": true,
+      "reachable": false,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    }
+  ],
+  "relayfee": 0.00001000,
+  "incrementalfee": 0.00001000,
+  "localaddresses": [
+  ],
+  "warnings": [
+    "This is a pre-release test build - use at your own risk - do not use for mining or merchant applications"
+  ]
+}
+{
+  "walletname": "Flo1",
+  "walletversion": 169900,
+  "format": "sqlite",
+  "balance": 0.00000000,
+  "unconfirmed_balance": 0.00000000,
+  "immature_balance": 0.00000000,
+  "txcount": 0,
+  "keypoolsize": 3999,
+  "keypoolsize_hd_internal": 4000,
+  "paytxfee": 0.00000000,
+  "private_keys_enabled": true,
+  "avoid_reuse": false,
+  "scanning": false,
+  "descriptors": true,
+  "external_signer": false,
+  "blank": false,
+  "birthtime": 1762961284,
+  "lastprocessedblock": {
+    "hash": "5da1587defd98e986ab75e91c7744f4d46c241cf240dbaebd37741bf902f346c",
+    "height": 306
+  }
+}
+{
+  "blocks": 306,
+  "difficulty": 4.656542373906925e-10,
+  "networkhashps": 0.0001389990102112148,
+  "pooledtx": 0,
+  "chain": "regtest",
+  "warnings": [
+    "This is a pre-release test build - use at your own risk - do not use for mining or merchant applications"
+  ]
+}
+306
+bcrt1q8txrv8ckag9gk3jzfjc2w07tdjv6dhvteg3avu
+{
+  "version": 289900,
+  "subversion": "/Satoshi:28.99.0/",
+  "protocolversion": 70016,
+  "localservices": "0000000000000c09",
+  "localservicesnames": [
+    "NETWORK",
+    "WITNESS",
+    "NETWORK_LIMITED",
+    "P2P_V2"
+  ],
+  "localrelay": true,
+  "timeoffset": 0,
+  "networkactive": true,
+  "connections": 1,
+  "connections_in": 1,
+  "connections_out": 0,
+  "networks": [
+    {
+      "name": "ipv4",
+      "limited": false,
+      "reachable": true,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    },
+    {
+      "name": "ipv6",
+      "limited": false,
+      "reachable": true,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    },
+    {
+      "name": "onion",
+      "limited": true,
+      "reachable": false,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    },
+    {
+      "name": "i2p",
+      "limited": true,
+      "reachable": false,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    },
+    {
+      "name": "cjdns",
+      "limited": true,
+      "reachable": false,
+      "proxy": "",
+      "proxy_randomize_credentials": false
+    }
+  ],
+  "relayfee": 0.00001000,
+  "incrementalfee": 0.00001000,
+  "localaddresses": [
+  ],
+  "warnings": [
+    "This is a pre-release test build - use at your own risk - do not use for mining or merchant applications"
+  ]
+}
+{
+  "walletname": "Flo1",
+  "walletversion": 169900,
+  "format": "sqlite",
+  "balance": 0.00000000,
+  "unconfirmed_balance": 0.00000000,
+  "immature_balance": 0.00000000,
+  "txcount": 0,
+  "keypoolsize": 3999,
+  "keypoolsize_hd_internal": 4000,
+  "paytxfee": 0.00000000,
+  "private_keys_enabled": true,
+  "avoid_reuse": false,
+  "scanning": false,
+  "descriptors": true,
+  "external_signer": false,
+  "blank": false,
+  "birthtime": 1762961284,
+  "lastprocessedblock": {
+    "hash": "5da1587defd98e986ab75e91c7744f4d46c241cf240dbaebd37741bf902f346c",
+    "height": 306
+  }
+}
+{
+  "blocks": 306,
+  "difficulty": 4.656542373906925e-10,
+  "networkhashps": 0.0001389990102112148,
+  "pooledtx": 0,
+  "chain": "regtest",
+  "warnings": [
+    "This is a pre-release test build - use at your own risk - do not use for mining or merchant applications"
+  ]
+}
+306
