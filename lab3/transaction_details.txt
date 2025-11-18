@@ -1,0 +1,45 @@
+{
+  "amount": 0.00000000,
+  "fee": -0.00002820,
+  "confirmations": 1,
+  "blockhash": "1b2d89eab8e5335a5894c5ed05754b2058bd487e1c8a839e64d271a0100310bb",
+  "blockheight": 612,
+  "blockindex": 1,
+  "blocktime": 1763214818,
+  "txid": "bb9709703b1e93298d5e5657a19ef5209408bf84554360b0e747207ad9d2df1d",
+  "wtxid": "9ad080ae879f37a65b394c59a6daa55e09c06bbab6da71f84373b51337640a5c",
+  "walletconflicts": [
+  ],
+  "mempoolconflicts": [
+  ],
+  "time": 1763214262,
+  "timereceived": 1763214262,
+  "bip125-replaceable": "no",
+  "details": [
+    {
+      "address": "bcrt1qce09du6d89pfq8l9mnw4um3639x90wam9cec7k",
+      "category": "send",
+      "amount": -0.10000000,
+      "label": "florecv",
+      "vout": 0,
+      "fee": -0.00002820,
+      "abandoned": false
+    },
+    {
+      "address": "bcrt1qce09du6d89pfq8l9mnw4um3639x90wam9cec7k",
+      "parent_descs": [
+        "wpkh(tpubD6NzVbkrYhZ4Y9RUTU2usKP3hgogVfZZaRkRUbkQeGpmApLkEAjsQtx6Q2WHsQTUACxZt9BkYai2xzEWEbwXsBL47J4DwhTidPkBPG5MBDk/84h/1h/0h/0/*)#m3gs9luj"
+      ],
+      "category": "receive",
+      "amount": 0.10000000,
+      "label": "florecv",
+      "vout": 0,
+      "abandoned": false
+    }
+  ],
+  "hex": "020000000001019058d042476b38668ec6771026ef2ebc85ea9fc502c55697019e74de561e7e2f0000000000fdffffff028096980000000000160014c65e56f34d3942901fe5dcdd5e6e3a894c57bbbbb8acda06000000001600145c5e513e48cab0c11214cdfe4366d14e910860050247304402205a11b2af5d34c171763dd9dbe38aee0411c81694fcac025d35b365639f0062820220260075a7c35b8566b7c98ba7bfd982f26730718b6add9e5b6ddfe33a53cc85bc0121021781468551670fc3281dfc47c001fa483f80c792e29debea23bb0a767913355063020000",
+  "lastprocessedblock": {
+    "hash": "1b2d89eab8e5335a5894c5ed05754b2058bd487e1c8a839e64d271a0100310bb",
+    "height": 612
+  }
+}

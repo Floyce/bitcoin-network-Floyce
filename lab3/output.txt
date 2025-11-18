@@ -1,0 +1,92 @@
+
+black_dev@Black:~/bitcoin-network-Floyce$ bitcoind -regtest -daemon
+Bitcoin Core starting
+black_dev@Black:~/bitcoin-network-Floyce$ bitcoin-cli -regtest getblockchaininfo
+{
+  "chain": "regtest",
+  "blocks": 607,
+  "headers": 607,
+  "bestblockhash": "50842c15b11335be630e1605d3ead419894daabe219251ba034e1145bc897db8",
+  "difficulty": 4.656542373906925e-10,
+  "time": 1763037927,
+  "mediantime": 1763037926,
+  "verificationprogress": 1,
+  "initialblockdownload": false,
+  "chainwork": "00000000000000000000000000000000000000000000000000000000000004c0",   
+  "size_on_disk": 181643,
+  "pruned": false,
+  "warnings": [
+    "This is a pre-release test build - use at your own risk - do not use for mining or merchant applications"
+  ]
+black_dev@Black:~/bitcoin-network-Floyce$ bitcoin-cli -regtest loadwallet devwallet  
+{
+  "name": "devwallet"
+}
+black_dev@Black:~/bitcoin-network-Floyce$ bitcoin-cli -regtest -rpcwallet=devwallet getnewaddress
+bcrt1ql5us8dhxr7vmtfjmw7sh78z2cyafhrz57jj5jw
+black_dev@Black:~/bitcoin-network-Floyce$ bitcoin-cli -regtest -rpcwallet=devwallet sendtoaddress $RECV_ADDR 5.0
+2f7e1e56de749e019756c502c59fea85bc2eef261077c68e66386b4742d05890
+black_dev@Black:~/bitcoin-network-Floyce$ ADDRESS=$(bitcoin-cli -regtest -rpcwallet=devwallet getnewaddress)
+bitcoin-cli -regtest generatetoaddress 1 $ADDRESS
+[
+  "28bc5d7d5bea943c7926b3a45cb4c9f50135cee887fd9c7abaa82c32b1fc4249"
+black_dev@Black:~/bitcoin-network-Floyce$ MINER_ADDR=$(bitcoin-cli -regtest -rpcwalle
+t=devwallet getnewaddress)
+black_dev@Black:~/bitcoin-network-Floyce$ echo $MINER_ADDR
+bcrt1qgf38ysnkmxepxf24nn0u6ljm8yz6h9h4s74qk3
+black_dev@Black:~/bitcoin-network-Floyce$ bitcoin-cli -regtest generatetoaddress 1 $M
+INER_ADDR
+[
+  "192f1f8dc416b86a3c9431c2d54a56727f2a2abd4f4c138ada156b069fe76e30"
+]
+black_dev@Black:~/bitcoin-network-Floyce$ RECV_ADDR=$(bitcoin-cli -regtest -rpcwallet=devwallet getnewaddress)
+black_dev@Black:~/bitcoin-network-Floyce$ TXID=$(bitcoin-cli -regtest -rpcwallet=devw
+allet sendtoaddress $RECV_ADDR 5.0)
+black_dev@Black:~/bitcoin-network-Floyce$ echo $TXID
+8ec5a32577d52de9c0612fba489a4bf27d78b3fe59b4a599b0a59c9596beaee0
+black_dev@Black:~/bitcoin-network-Floyce$ bitcoin-cli -regtest -rpcwallets=devwallet 
+gettransaction $TXID
+Error parsing command line arguments: Invalid parameter -rpcwallets=devwallet
+black_dev@Black:~/bitcoin-network-Floyce$ bitcoin-cli -regtest -rpcwallet=devwallet g
+ettransaction $TXID
+{
+  "amount": 0.00000000,
+  "fee": -0.00002820,
+  "confirmations": 0,
+  "trusted": true,
+  "txid": "8ec5a32577d52de9c0612fba489a4bf27d78b3fe59b4a599b0a59c9596beaee0",        
+  "wtxid": "9ed1867616d9a57146e4602d285b4b531695fc597bcb29a173d0b589ff769efa",       
+  "walletconflicts": [
+  ],
+  "mempoolconflicts": [
+  ],
+  "time": 1763069911,
+  "timereceived": 1763069911,
+  "bip125-replaceable": "yes",
+  "details": [
+    {
+      "address": "bcrt1q3wz4dgx6mmvkjtxf2v4xglvv3y7tqjvrgl5gqa",
+      "category": "send",
+      "amount": -5.00000000,
+      "label": "",
+      "vout": 0,
+      "fee": -0.00002820,
+      "abandoned": false
+    },
+    {
+      "address": "bcrt1q3wz4dgx6mmvkjtxf2v4xglvv3y7tqjvrgl5gqa",
+      "parent_descs": [
+        "wpkh(tpubD6NzVbkrYhZ4Y9RUTU2usKP3hgogVfZZaRkRUbkQeGpmApLkEAjsQtx6Q2WHsQTUACxZt9BkYai2xzEWEbwXsBL47J4DwhTidPkBPG5MBDk/84h/1h/0h/0/*)#m3gs9luj"
+      ],
+      "category": "receive",
+      "amount": 5.00000000,
+      "label": "",
+      "vout": 0,
+      "abandoned": false
+    }
+  ],
+  "hex": "02000000000101375cf3ec32635af752b3faaaa27e8860619b77dc964fa9ac2c9907e8fd8bd5a10000000000fdffffff020065cd1d000000001600148b8556a0daded9692cc9532a647d8c893cb04983fc81380c010000001600144bd55dcb8218cfd9c8b2526ddb94a2e63c4e3d370247304402201aafb2b9afc8f26d95393518bdd3036350f872e48dcda8b8e79e9ac25c1ac8f802202f1f6961f67a9862c5e6a985e74f4744ee26ccb98d91195652e8cad1470dc027012102b6bf3da12ffa9ae11b3695b2aa20eee1f0ebee1ec68e8e7cc9ebd96e15f0204a62020000",
+  "lastprocessedblock": {
+    "hash": "192f1f8dc416b86a3c9431c2d54a56727f2a2abd4f4c138ada156b069fe76e30",      
+    "height": 610
+  }
